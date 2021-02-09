@@ -3638,7 +3638,7 @@ headerbar,
   &, .csd &,
   &.default-decoration,
   .csd &.default-decoration {  // needed under wayland, since all gtk3 windows are csd windows
-    @extend %titlebuttons;
+    
   }
 }
 

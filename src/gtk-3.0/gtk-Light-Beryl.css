@@ -4437,116 +4437,6 @@ entry selection:disabled, modelbutton.flat:disabled:selected,
 /*****************
  * Title buttons *
  *****************/
-headerbar button.titlebutton:hover, .titlebar button.titlebutton:hover {
-  transition-duration: 0.1s;
-}
-
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close, headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize, headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize, headerbar button.titlebutton.restore, .titlebar button.titlebutton.restore {
-  margin: 0;
-  padding: 0;
-  min-width: 26px;
-  min-height: 26px;
-  animation: none;
-  box-shadow: none;
-  border: none;
-  color: transparent;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, .titlebar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop, .titlebar button.titlebutton.minimize:backdrop, headerbar button.titlebutton.restore:backdrop, .titlebar button.titlebutton.restore:backdrop {
-  opacity: 1;
-}
-
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close.png"), url("windows-assets/titlebutton-close@2.png"));
-}
-
-headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-backdrop.png"), url("windows-assets/titlebutton-close-backdrop@2.png"));
-}
-
-headerbar button.titlebutton.close:hover, .titlebar button.titlebutton.close:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-hover.png"), url("windows-assets/titlebutton-close-hover@2.png"));
-}
-
-headerbar button.titlebutton.close:active, .titlebar button.titlebutton.close:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-close-active.png"), url("windows-assets/titlebutton-close-active@2.png"));
-}
-
-headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize.png"), url("windows-assets/titlebutton-maximize@2.png"));
-}
-
-headerbar button.titlebutton.maximize:backdrop, .titlebar button.titlebutton.maximize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-backdrop.png"), url("windows-assets/titlebutton-maximize-backdrop@2.png"));
-}
-
-headerbar button.titlebutton.maximize:hover, .titlebar button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-hover.png"), url("windows-assets/titlebutton-maximize-hover@2.png"));
-}
-
-headerbar button.titlebutton.maximize:active, .titlebar button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-maximize-active.png"), url("windows-assets/titlebutton-maximize-active@2.png"));
-}
-
-headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize.png"), url("windows-assets/titlebutton-minimize@2.png"));
-}
-
-headerbar button.titlebutton.minimize:backdrop, .titlebar button.titlebutton.minimize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-backdrop.png"), url("windows-assets/titlebutton-minimize-backdrop@2.png"));
-}
-
-headerbar button.titlebutton.minimize:hover, .titlebar button.titlebutton.minimize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-hover.png"), url("windows-assets/titlebutton-minimize-hover@2.png"));
-}
-
-headerbar button.titlebutton.minimize:active, .titlebar button.titlebutton.minimize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-minimize-active.png"), url("windows-assets/titlebutton-minimize-active@2.png"));
-}
-
-headerbar button.titlebutton.restore, .titlebar button.titlebutton.restore {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore.png"), url("windows-assets/titlebutton-restore@2.png"));
-}
-
-headerbar button.titlebutton.restore:backdrop, .titlebar button.titlebutton.restore:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-backdrop.png"), url("windows-assets/titlebutton-restore-backdrop@2.png"));
-}
-
-headerbar button.titlebutton.restore:hover, .titlebar button.titlebutton.restore:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-hover.png"), url("windows-assets/titlebutton-restore-hover@2.png"));
-}
-
-headerbar button.titlebutton.restore:active, .titlebar button.titlebutton.restore:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-active.png"), url("windows-assets/titlebutton-restore-active@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize, .fullscreen .titlebar button.titlebutton.maximize,
-.maximized headerbar button.titlebutton.maximize,
-.maximized .titlebar button.titlebutton.maximize {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore.png"), url("windows-assets/titlebutton-restore@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:backdrop, .fullscreen .titlebar button.titlebutton.maximize:backdrop,
-.maximized headerbar button.titlebutton.maximize:backdrop,
-.maximized .titlebar button.titlebutton.maximize:backdrop {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-backdrop.png"), url("windows-assets/titlebutton-restore-backdrop@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:hover, .fullscreen .titlebar button.titlebutton.maximize:hover,
-.maximized headerbar button.titlebutton.maximize:hover,
-.maximized .titlebar button.titlebutton.maximize:hover {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-hover.png"), url("windows-assets/titlebutton-restore-hover@2.png"));
-}
-
-.fullscreen headerbar button.titlebutton.maximize:active, .fullscreen .titlebar button.titlebutton.maximize:active,
-.maximized headerbar button.titlebutton.maximize:active,
-.maximized .titlebar button.titlebutton.maximize:active {
-  background-image: -gtk-scaled(url("windows-assets/titlebutton-restore-active.png"), url("windows-assets/titlebutton-restore-active@2.png"));
-}
-
 /**********************
  * Touch Copy & Paste *
  *********************/
@@ -5932,8 +5822,8 @@ UnityDecoration.menubar .menuitem *:hover {
 
 UnityPanelWidget,
 .unity-panel {
-  background-color: #3F444D;
-  background-image: image(#3F444D);
+  background-color: #424242;
+  background-image: image(#424242);
   color: #FFFFFF;
 }
 
@@ -5986,7 +5876,7 @@ menuitem calendar iconview {
 
 #PanelPlug,
 PanelToplevel.background {
-  background-color: #3F444D;
+  background-color: #424242;
   color: #FFFFFF;
   font-weight: 500;
 }
@@ -6590,13 +6480,13 @@ popover.background.places-menu row {
 
 .budgie-panel {
   transition: background-color 0.2s cubic-bezier(0, 0, 0.2, 1);
-  background-color: #3F444D;
+  background-color: #424242;
   color: #EAEAEA;
   font-weight: 500;
 }
 
 .budgie-panel.transparent {
-  background-color: rgba(63, 68, 77, 0.85);
+  background-color: rgba(66, 66, 66, 0.85);
 }
 
 .budgie-panel button {
@@ -7284,5 +7174,5 @@ these are pretty self explicative */
 @define-color placeholder_text_color rgba(128, 128, 128, 0.88);
 @define-color budgie_tasklist_indicator_color #2EB398;
 @define-color budgie_tasklist_indicator_color_active #2EB398;
-@define-color budgie_tasklist_indicator_color_active_window #368076;
+@define-color budgie_tasklist_indicator_color_active_window #377f70;
 @define-color budgie_tasklist_indicator_color_attention #FF6D00;

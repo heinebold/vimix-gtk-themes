@@ -45,13 +45,13 @@ $disabled_secondary_inversed_fg_color: scale-alpha($secondary_inversed_fg_color,
 $disabled_tertiary_inversed_fg_color: scale-alpha($tertiary_inversed_fg_color, $disabled_opacity);
 
 // Background colors
-$bg_color: if($variant =='dark', if($color == 'ruby' or $color == 'black' or $color == 'white', #333333, #343943), #F5F5F5);
-$base_color: if($variant =='dark', if($color == 'ruby' or $color == 'black' or $color == 'white', #404040, #40454F), #FFFFFF);
+$bg_color: if($variant =='dark', #333333, #F5F5F5);
+$base_color: if($variant =='dark', #404040, #FFFFFF);
 $alt_base_color: mix($base_color, $bg_color, 50%);
 
-$lighter_bg_color: if($variant =='dark', if($color == 'ruby' or $color == 'black' or $color == 'white', #444444, #444851), #FCFCFC);
-$darker_bg_color: if($variant =='dark', if($color == 'ruby' or $color == 'black' or $color == 'white', #303030, #31353E), #EEEEEE);
-$darker_fg_color: if($variant =='light', if($color == 'ruby' or $color == 'black' or $color == 'white', #222222, #191D29), #DDDDDD);
+$lighter_bg_color: if($variant =='dark', #444444, #FCFCFC);
+$darker_bg_color: if($variant =='dark', #303030, #EEEEEE);
+$darker_fg_color: if($variant =='light', #222222, #DDDDDD);
 
 // Headerbar colors
 $headerbar_fg_color: if($headerbar =='dark', $dark_contrast_color, $fg_color);
@@ -59,8 +59,7 @@ $secondary_headerbar_fg_color: if($headerbar =='dark', $secondary_inversed_fg_co
 $disabled_headerbar_fg_color: if($headerbar =='dark', $disabled_secondary_inversed_fg_color, $disabled_fg_color);
 
 $headerbar_bg_color: #eeeeee;
-@if ($color == 'ruby' or $color == 'black') and $headerbar =='dark' { $headerbar_bg_color: if($variant =='light', #444444, #424242); }
-@if ($color == 'doder' or $color == 'beryl') and $headerbar =='dark' { $headerbar_bg_color: if($variant =='light', #444851, #3F444D); }
+@if $headerbar =='dark' { $headerbar_bg_color: if($variant =='light', #444444, #424242); }
 
 // Selected and Theme colors
 $primary_color: #686868;
@@ -91,8 +90,6 @@ $disabled_menu_fg_color: if($headerbar =='light' and $variant =='light', rgba(#0
 $tab_color: $inverse_theme_color;
 $secondary_titlebar_color: $primary_color;
 $topbar_bg_color: #424242;
-@if $color == 'ruby' or $color == 'black' { $topbar_bg_color: #424242; }
-@if $color == 'doder' or $color == 'beryl' { $topbar_bg_color: #3F444D; }
 $topbar_fg_color: $dark_contrast_color;
 $alt_topbar_fg_color: $darker_contrast_color;
 
